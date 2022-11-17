@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+        <style>
+            .nav{
+                background-color: #40868b;
+                padding: 1% 7%;
+                text-align: center;
+            }
+
+            .nav a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+
+
+            .drop-container{
+                display: inline;
+                position: relative;
+            }
+
+
+             .drop-content a{
+                display: block;
+
+
+            }
+
+            .drop-content{
+                display: block;
+                position: absolute;
+                top: 30px;
+                right: 0px;
+                background-color: #40868b;
+                text-align: left;
+                display: none;
+                min-width: 100px;
+                
+            }
+
+            .drop-container:hover .drop-content{
+                display: block;
+            }
+
+            .drop-content a:hover {
+                background-color: crimson;
+            }
+                
+
+
+                  
+
+        </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">tutorial</a>
+        <a href="#">contact me</a>
+        <div class="drop-container">
+            <a href="#">facebook</a>
+            <div class="drop-content">
+                <a href="#">email</a>
+                <a href="#">whats app</a>
+            </div>
+        </div>
+        <a href="#">About</a>
+    </div>
+    
+</body>
+</html>
